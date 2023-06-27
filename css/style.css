@@ -1,0 +1,157 @@
+
+body {
+  background: #404EED;
+}
+
+/*<<<<<<<<<<  MOBILE NAVBAR >>>>>>>>>>>>>*/
+
+
+.mobile-wrapper__nav-mobile {
+  padding: 0 20px;
+}
+
+.nav-mobile{
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+height: 80px;
+}
+
+.nav-mobile__logo-container a {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.menu {
+  display: flex
+}
+
+.menu button, .menu svg {
+width: 40px;
+color: white;
+font-weight: bold;
+}
+
+
+/*<<<<<< MOBILE NAV MENU CONTAINER >>>>>>>*/
+
+.nav-mobile__nav-mobile-links-container-wrapper {
+  background: white;
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  max-width: 282px;
+  height: 100vh;
+  border-radius: 12px 0 0 12px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999; 
+  padding: 8px 28px 0px 24px;
+}
+
+.nav-mobile-links-container__top-menu {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  margin: 0 8px;
+}
+
+.close-icon {
+height: 24px;
+padding: 0;
+}
+
+.close-icon svg {
+  height: 24px;
+  margin-left: 35px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  height: 34px;
+}
+
+.company-name {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+/* change color of company name title that's not in menu container */
+.nav-mobile__logo-container .company-name {
+  color: white;
+}
+
+.spacer {
+  border: .5px solid rgb(235, 237, 239);
+  margin: 20px 0;
+  margin: 24px 0 16px;
+}
+
+
+/* --------------- */
+
+
+.nav-links {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+  font-size: 16px;
+}
+
+.nav-links li, .nav-link-extended-link{
+  padding: 8px 16px;
+}
+
+.nav-link-extended-link {
+  display: flex;
+  align-items: center;
+}
+
+.extra-info-toggle {
+  padding: 0;
+  display: flex;
+  color: black;
+}
+
+.extra-info-toggle svg {
+  width: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* Download button in menu */
+.google-play-download-btn {
+  background: rgb(88, 101, 242);
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  align-self: center;
+  border-radius: 24px;
+  max-width: 282px;
+  max-height: 38px;
+  padding: 18px 20px;
+  margin: 0 0 24px 0;
+}
+
+.google-play-download-btn svg {
+  width: 20px;
+  margin-right: 8px;
+}
+
+/* -------------------- */
+/* -------------------- */
