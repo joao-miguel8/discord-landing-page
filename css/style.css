@@ -1,6 +1,22 @@
+@import url('https://fonts.cdnfonts.com/css/druk-wide-bold');
 
-body {
-  background: #404EED;
+
+:root {
+  --ff-heading: 'Druk Wide Bold', sans-serif;
+  --ff: 'Noto Sans', sans-serif;
+  --fw100: 100;
+  --fw200: 200;
+  --fw300: 300;
+  --fw400: 400;
+  --fw500: 500;
+  --fw600: 600;
+  --fw700: 700;
+  --fw800: 800;
+  --fw900: 900;
+}
+
+html {
+  min-width: 320px;
 }
 
 /*<<<<<<<<<<  MOBILE NAVBAR >>>>>>>>>>>>>*/
@@ -8,30 +24,32 @@ body {
 
 .mobile-wrapper__nav-mobile {
   padding: 0 20px;
+  background: #404EED;
 }
 
-.nav-mobile{
-display: flex;
-align-items: center;
-justify-content: space-between;
-width: 100%;
-height: 80px;
+.nav-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
 }
 
 .nav-mobile__logo-container a {
-display: flex;
-align-items: center;
-gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .menu {
   display: flex
 }
 
-.menu button, .menu svg {
-width: 40px;
-color: white;
-font-weight: bold;
+.menu button,
+.menu svg {
+  width: 40px;
+  color: white;
+  font-weight: bold;
 }
 
 
@@ -39,19 +57,19 @@ font-weight: bold;
 
 .nav-mobile__nav-mobile-links-container-wrapper {
   background: white;
-  /* display: flex; */
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100vw;
+  /* width: 100vw; */
   max-width: 282px;
   height: 100vh;
   border-radius: 12px 0 0 12px;
   position: fixed;
   top: 0;
-  right: 0;
-  z-index: 9999; 
+  right: -100%;
+  z-index: 9999;
   padding: 8px 28px 0px 24px;
+  transition: ease-out .5s;
 }
 
 .nav-mobile-links-container__top-menu {
@@ -64,8 +82,8 @@ font-weight: bold;
 }
 
 .close-icon {
-height: 24px;
-padding: 0;
+  height: 24px;
+  padding: 0;
 }
 
 .close-icon svg {
@@ -86,9 +104,10 @@ padding: 0;
 }
 
 .company-name {
-  font-size: 1.2rem;
+  font-size: .8rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
+  font-family: var(--ff-heading);
 }
 
 /* change color of company name title that's not in menu container */
@@ -102,9 +121,7 @@ padding: 0;
   margin: 24px 0 16px;
 }
 
-
 /* --------------- */
-
 
 .nav-links {
   text-decoration: none;
@@ -113,7 +130,8 @@ padding: 0;
   font-size: 16px;
 }
 
-.nav-links li, .nav-link-extended-link{
+.nav-links li,
+.nav-link-extended-link {
   padding: 8px 16px;
 }
 
@@ -153,5 +171,67 @@ padding: 0;
   margin-right: 8px;
 }
 
-/* -------------------- */
-/* -------------------- */
+/* JS MANIPULATION CLASSES */
+
+.js-show-menu-toggle {
+  right: 0%;
+}
+
+
+/* ========================== */
+
+/* <<<<<<<<Hero Section>>>>>>> */
+.hero {
+  background: #404EED;
+  width: 100%;
+}
+
+.hero-body {
+  padding: 56px 24px;
+}
+
+.hero-text-title {
+  font-size: 1.5rem;
+  font-family: var(--ff-heading);
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  line-height: .9;
+  color: white;
+}
+
+.hero-text-description {
+  font-family: var(--ff);
+  color: white;
+  font-size: clamp(.8rem, 2vw, 1.25rem);
+  line-height: 1.8;
+  margin-top: 24px;
+}
+
+.hero__hero-download-button {
+  background: white;
+  display: flex;
+  align-items: center;
+  min-width: 272px;
+  font-family: var(--ff);
+  padding: 14px 32px;
+  border-radius: 34px;
+  margin-top: 24px;
+}
+
+.hero__hero-img-container {
+  position: relative;
+  left: -80px;
+  bottom: 0;
+}
+
+.hero__hero-download-button a {
+  color: inherit;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.hero__hero-download-button svg {
+  margin: 0 8px 0 0;
+  width: 28px;
+  height: 22.547px;
+}

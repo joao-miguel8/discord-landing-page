@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- fonts -->
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/default.css">
   <link rel="stylesheet" href="./css/style.css">
   <script src="./js/main.js" defer></script>
@@ -12,6 +14,7 @@
 </head>
 <body>
 <header>
+  <!-- mobile-navbar -->
   <div class="mobile-wrapper__nav-mobile">
 <div class="nav-mobile">
 <div class="nav-mobile__logo-container">
@@ -26,7 +29,7 @@
 </button>
 </div>
   </div>
-  <!-- mobile nav menu container -->
+  <!-- mobile-nav-menu-container -->
   <div class="nav-mobile__nav-mobile-links-container-wrapper">
     <div class="nav-mobile__nav-mobile-links-container">
     <!-- top menu section -->
@@ -70,9 +73,25 @@
   </svg>
    <h5>Download from Google Play</h5></button>
   </div>
-
-
 </header>
-<main></main>
+<main>
+<section class="hero">
+<div class="hero-body">
+  <div class="hero-text">
+    <h1 class="hero-text-title">imagine a place...</h1>
+<p class="hero-text-description">...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you adn a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</p>
+  </div>
+  <div class="hero__hero-download-button" aria-label="download discord from Google play" >
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+</svg>
+    <a href="#">Download from Google Play</a>
+  </div>-
+</div>
+<div class="hero__hero-img-container">
+<img class="foreground-left-img" src="./assets/img/hero-img01.svg" alt="hero image 1 cartoon characters hanging out">
+</div>
+</section>
+</main>
 </body>
 </html>
