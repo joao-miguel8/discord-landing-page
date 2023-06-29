@@ -14,3 +14,21 @@ function toggleMobileMenu() {
   function unToggleMobileMenu() {
     mobileMenuContainerEle.classList.toggle('js-show-menu-toggle');
 }
+
+
+
+// FEATURES SECTION SCROLL ANIMATION:
+const featuresContainer = document.querySelectorAll('.features-container__feature');
+
+// Use IntersectionObserver WebAPI to track wether or not the element is in viewport(window) if so add animation
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    (entry.isIntersecting) ? entry.target.classList.add('showFeature') : "";
+  })
+});
+// query all elements with hideFeature class 
+const hiddenElements = document.querySelectorAll('.hideFeature'); 
+// loop each element with class and set it to be observed
+hiddenElements.forEach((ele) => {
+  observer.observe(ele);
+})

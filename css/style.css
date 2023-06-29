@@ -60,13 +60,12 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* width: 100vw; */
-  max-width: 282px;
-  height: 100vh;
+  height: 100%;
+  width: clamp(350px, 70%, 100%);
   border-radius: 12px 0 0 12px;
   position: fixed;
   top: 0;
-  right: -100%;
+  right: -120%;
   z-index: 9999;
   padding: 8px 28px 0px 24px;
   transition: ease-out .5s;
@@ -207,11 +206,11 @@ html {
   margin-top: 24px;
 }
 
-.hero__hero-download-button {
+.hero__hero-download-btn {
   background: white;
   display: flex;
   align-items: center;
-  min-width: 272px;
+  max-width: 410px;
   font-family: var(--ff);
   padding: 14px 32px;
   border-radius: 34px;
@@ -224,14 +223,75 @@ html {
   bottom: 0;
 }
 
-.hero__hero-download-button a {
+.hero__hero-download-btn a {
   color: inherit;
   font-size: 1.25rem;
   text-decoration: none;
 }
 
-.hero__hero-download-button svg {
+.hero__hero-download-btn svg {
   margin: 0 8px 0 0;
   width: 28px;
   height: 22.547px;
 }
+
+
+/* ---------------------- */
+/* ---------------------- */
+
+/* FEATURES SECTION */
+
+.features-container__feature {
+  width: 100%;
+  padding: 56px 26px;
+  margin: 0 auto;
+}
+
+.features-container__feature:nth-child(even) {
+  background: #fff;
+}
+
+.features-container__feature:nth-child(odd) {
+  background: #F6F6F6;
+}
+
+.features-container__feature img {
+margin: 24px 0 0 0;
+}
+
+.feature-text-content {
+  margin: 20px 0 0 0;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-family: var(--ff);
+}
+
+.feature-title--bold {
+  font-size: 1rem;
+    font-family: var(--ff-heading);
+    font-weight: var(--fw800);
+}
+
+.feature-description {
+  font-size: .9rem;
+  font-family: var(--ff);
+  font-weight: var(--fw300);
+  margin: 24px 0 0 0;
+}
+
+
+
+/* FEATURE SECTION ANIMATION */
+
+.hideFeature {
+  opacity: 0;
+}
+
+.showFeature {
+  opacity: 1;
+  transition: 1.2s ease-in-out;
+}
+
+/* --------------------------- */
