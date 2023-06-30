@@ -63,7 +63,8 @@ html {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  width: clamp(350px, 70%, 100%);
+  width: 100%;
+  max-width: 330px;
   border-radius: 12px 0 0 12px;
   position: fixed;
   top: 0;
@@ -310,6 +311,7 @@ margin: 24px 0 0 0;
 }
 
 .stars-bg {
+  border: 1px solid saddlebrown;
   position: absolute;
   display: flex;
   justify-content: center;
