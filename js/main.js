@@ -32,3 +32,5 @@ const hiddenElements = document.querySelectorAll('.hideFeature');
 hiddenElements.forEach((ele) => {
   observer.observe(ele);
 })
+
+
