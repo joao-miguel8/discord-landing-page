@@ -290,11 +290,13 @@ margin: 24px 0 0 0;
 
 .hideContent {
   opacity: 0;
+  transform: translateY(30px);
 }
 
 .showContent {
   opacity: 1;
   transition: 1.2s ease-in-out;
+  transform: translateY(0px);
 }
 
 /* --------------------------- */
@@ -311,7 +313,6 @@ margin: 24px 0 0 0;
 }
 
 .stars-bg {
-  border: 1px solid saddlebrown;
   position: absolute;
   display: flex;
   justify-content: center;
