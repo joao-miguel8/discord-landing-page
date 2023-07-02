@@ -354,3 +354,92 @@ max-width: 531px;
     min-height: 26px;
     margin: 0 8px 0 0;
 }
+
+/* ------------------------------- */
+/* ------------------------------- */
+
+/* FOOTER SECTION */
+
+footer {
+  padding: 80px 0 64px 0;
+  background: #23272A;
+}
+
+
+/* <<<<<<<<<< LANGUAGES-CONTAINER>>>>>>>>>>> */
+
+.language-wrapper {
+  position: relative;
+  margin: 24px 0;
+}
+
+.info-box-container__dropmenu {
+  background: white;
+  border-radius: 6px;
+  position: absolute;
+  max-height: 180px;
+  min-width: 140px;
+  bottom: 100%;
+  flex-direction: column;
+  overflow-y: auto;
+  overscroll-behavior: contain ;
+}
+
+.info-box-container__dropmenu::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+background: #C0C0C0;
+border-radius: 14px;
+}
+
+.dropmenu-item {
+  display: flex;
+  align-items: center;
+  font-size: .8rem;
+  margin-top: 4px;
+}
+
+.dropmenu-item button {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.selected-dropdown-lang {
+  color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px;
+}
+
+.selected-dropdown-lang svg {
+  width: 14px;
+}
+
+.country-flag-img img {
+  width: 20px;
+}
+
+.languageMenuToggle {
+  display: none;
+}
+
+/*<<<<<<<<<<<< SOCIAL-MEDIA-CONTAINER >>>>>>>>>*/
+
+.info-box-container__socials {
+display: flex;
+gap: 20px;
+margin: 24px 0 0 0;
+}
+
+
+.socials-media img {
+  width: 20px;
+}
+
+
