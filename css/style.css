@@ -399,6 +399,7 @@ footer {
 
 .footer-content {
   padding: 20px;
+  max-width: 1180px;
 }
 
 
@@ -548,7 +549,7 @@ margin: 24px 0 0 0;
 @media (min-width: 770px) {
 
 
-  /* HERO SECTION: */
+  /* HERO SECTION Breakpoint 770px */
 .hero {
   overflow: hidden;
 }
@@ -595,13 +596,13 @@ margin: 24px 0 0 0;
   z-index: 0;
 }
 /* ---------------- */
-/* NAVBAR  770px */
+/* NAVBAR Breakpoint 770px */
 .open-discord-btn {
   display: block;
 }
 
 /* ---------------- */
-/* FEATURES SECTION 770px Breakpoints */
+/* FEATURES SECTION 770px Breakpoint */
 .features-container__feature:nth-child(-n+3)
 {
   .animation-wrapper {
@@ -645,7 +646,25 @@ flex-direction: row-reverse;
   }
 }
 
+/* FOOTER 770px Breakpoint */
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  /* max-width: 1180px; */
+  margin: 0 auto;
+}
+
+.info-box-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
 
 
+.footer-resources-container {
+max-width: 340px;
+margin: 0;
+}
 }
 
