@@ -43,6 +43,22 @@ html {
   gap: 10px;
 }
 
+.right-side-nav {
+  display: flex;
+  align-items: center;
+}
+
+.open-discord-btn {
+  background: rgb(243, 243, 243);
+  color: inherit;
+  display: none;
+  text-decoration: none;
+  font-size: .9rem;
+  border-radius: 40px;
+  margin: 0 16px 0 0;
+  padding: 7px 16px;
+}
+
 .menu {
   display: flex
 }
@@ -571,6 +587,10 @@ margin: 24px 0 0 0;
   z-index: 0;
 }
 /* ---------------- */
+/* NAVBAR  770px */
+.open-discord-btn {
+  display: block;
+}
 
 
 }
